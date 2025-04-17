@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".homeActivity">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:onClick="onViewClick"
+        android:scaleType="centerCrop"
+        android:src="@drawable/isndroid"
+
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <Button
+        android:id="@+id/bottom1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/botton_style"
+        android:onClick="onViewClick"
+        android:text="Android Course"
+        android:clickable="true"
+        app:layout_constraintTop_toBottomOf="@id/image1"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:onClick="onViewClick"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ios"
+        app:layout_constraintTop_toBottomOf="@id/bottom1"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <Button
+        android:id="@+id/bottom2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/botton_style"
+        android:onClick="onViewClick"
+        android:text="IOS Course"
+
+        app:layout_constraintTop_toBottomOf="@id/image2"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:onClick="onViewClick"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fullstack"
+
+        app:layout_constraintTop_toBottomOf="@id/bottom2"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <Button
+        android:id="@+id/bottom3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/botton_style"
+        android:onClick="onViewClick"
+        android:text="FullStack Course"
+
+        app:layout_constraintTop_toBottomOf="@id/image3"
+        tools:layout_editor_absoluteX="10dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
